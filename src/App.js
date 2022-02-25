@@ -4,6 +4,8 @@ import HomePage from "./pages/HomePage";
 import ResumePage from "./pages/ResumePage";
 import PortfolioPage from "./pages/PortfolioPage";
 
+
+
 function App() {
   return (
     <>
