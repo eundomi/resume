@@ -24,7 +24,7 @@ export default ResumePage;
 const ResumePageWrapper = styled.div`
   position: relative;
   width: auto;
-  padding: 0 15rem 10rem 15rem;
+  padding: 0 10rem 10rem 10rem;
   margin: 0px auto;
 `;
 const Info = styled.div`

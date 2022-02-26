@@ -7,7 +7,7 @@ const Experience = () => {
       <Subject>Work Experience</Subject>
       <BigWrapper>
         <PlaceWrapper>
-          <Name>DGIST (대구경북과학기술원)</Name>
+          <Name>DGIST <br/>(대구경북과학기술원)</Name>
           <Role>정보전산팀 | 기술원</Role>
           <Period>2021.04.~2021.10</Period>
         </PlaceWrapper>

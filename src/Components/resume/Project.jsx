@@ -7,7 +7,11 @@ const Project = () => {
       <Subject>Project</Subject>
       <BigWrapper>
         <PlaceWrapper>
-          <Name>요리조리 (Yori-Jori)</Name>
+          <Name>
+            요리조리
+            <br />
+            (Yori-Jori)
+          </Name>
           <Role>2021.01~2021.02 (4주)</Role>
           <Button>GitHub</Button>
           <Button>PPT</Button>
@@ -23,7 +27,7 @@ const Project = () => {
           <Content>요리하는 플랫폼입니다.</Content>
         </ContentWrapper>
         <ContentImageWrapper>
-          <Image src={`../images/eunjung.jpg`}></Image>
+          <Image src={`../images/yorijori.png`}></Image>
         </ContentImageWrapper>
       </BigWrapper>
       <BigWrapper>
@@ -44,7 +48,7 @@ const Project = () => {
           <Content>요리하는 플랫폼입니다.</Content>
         </ContentWrapper>
         <ContentImageWrapper>
-          <Image src={`../images/eunjung.jpg`}></Image>
+          <Image src={`../images/president101.png`}></Image>
         </ContentImageWrapper>
       </BigWrapper>
       <BigWrapper>
@@ -114,7 +118,7 @@ const Content = styled.p`
   font-size: 1.1rem;
 `;
 const Image = styled.img`
-  width: 330px;
+  width: 500px;
   object-fit: cover;
   margin-left: auto;
 `;
