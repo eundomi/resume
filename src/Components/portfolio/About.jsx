@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import TitlePortfolio from "../Common/TitlePortfolio";
 import Underline from "../Common/Underline";
-
+import { Link } from "react-router-dom";
 const About = () => {
   return (
     <AboutWrapper>
@@ -60,8 +60,12 @@ const About = () => {
           <ChannelWrapper>
             <Info title>Channel</Info>
             <ImageWrappers channel>
-              <ImageSkill src={`../images/GitHub.png`}></ImageSkill>
-              <ImageSkill src={`../images/tistory.svg`}></ImageSkill>
+              <a href="https://github.com/eundomi">
+                <ImageSkill title src={`../images/GitHub.png`}></ImageSkill>
+              </a>
+              <a href="https://eundomi.tistory.com/">
+                <ImageSkill title src={`../images/tistory.svg`}></ImageSkill>
+              </a>
             </ImageWrappers>
           </ChannelWrapper>
         </OtherWrapper>
@@ -134,8 +138,12 @@ const ImageSkill = styled.img`
   height: 90px;
   padding-right: 8px;
 
-  :after {
-  }
+  ${(props) =>
+    props.title &&
+    css`
+      padding-right: 40px;
+    `}
+
   :hover {
     opacity: 0.7;
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));
@@ -148,18 +156,14 @@ const ImageWrapper = styled.div`
   align-items: center;
 `;
 const ImageWrappers = styled.div`
+  display: absolute;
   text-align: center;
   justify-content: center;
   align-items: center;
-
   ${(props) =>
     props.channel &&
     css`
       display: flex;
-      justify-content: center;
-      align-item: center;
-      :after {
-        padding-right: 20px;
-      }
+      height: 160px;
     `}
 `;
