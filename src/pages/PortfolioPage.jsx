@@ -15,8 +15,8 @@ const PortfolioPage = () => {
       <Circle4></Circle4>
       <Header title="PORTFOLIO"></Header>
       <About></About>
-      <Contact></Contact>
       <Project></Project>
+      <Contact></Contact>
     </PortfolioPageWrapper>
   );
 };
