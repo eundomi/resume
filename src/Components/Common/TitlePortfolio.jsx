@@ -7,6 +7,7 @@ const TitlePortfolio = (props) => {
 export default TitlePortfolio;
 
 const Title = styled.h2`
+  position: relative;
   padding-top: 10vh;
   text-align: center;
   font-family: "SBAggroB";

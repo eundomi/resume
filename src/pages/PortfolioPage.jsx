@@ -25,7 +25,7 @@ export default PortfolioPage;
 const PortfolioPageWrapper = styled.div`
   padding: 0 10rem 10rem 10rem;
   margin: 0;
-  background: linear-gradient(180deg, #dbe9f6 15%, #fefcc9 44%, #f7d0d5 100%);
+  background: #e2e4e3;
 `;
 
 const Circle = styled.div`
@@ -35,8 +35,8 @@ const Circle = styled.div`
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: transparent linear-gradient(180deg, #a32cdf 0%, #106ad2 100%) 0%
-    0% no-repeat padding-box;
+  background: transparent linear-gradient(80deg, #aaa3d3 0%, #81c8f2 100%) 0% 0%
+    no-repeat padding-box;
   opacity: 0.77;
 `;
 
@@ -46,7 +46,7 @@ const Circle1 = styled.div`
   right: 0;
   width: 683px;
   height: 682px;
-  background: transparent linear-gradient(46deg, #00c0ff 0%, #4218b8 100%) 0% 0%
+  background: transparent linear-gradient(46deg, #81c8f2 0%, #4218b8 100%) 0% 0%
     no-repeat padding-box;
   opacity: 0.77;
   border-radius: 50%;
@@ -59,7 +59,7 @@ const Circle2 = styled.div`
   width: 300px;
   height: 300px;
   transform: matrix(-0.97, 0.26, -0.26, -0.97, 0, 0);
-  background: transparent linear-gradient(46deg, #00c0ff 0%, #4218b8 100%) 0% 0%
+  background: transparent linear-gradient(46deg, #fcbec6 0%, #4218b8 100%) 0% 0%
     no-repeat padding-box;
   opacity: 0.77;
   border-radius: 50%;
@@ -71,7 +71,7 @@ const Circle3 = styled.div`
   right: 0;
   width: 400px;
   height: 400px;
-  background: transparent linear-gradient(180deg, #0d4dff 0%, #00ffa9 100%) 0%
+  background: transparent linear-gradient(180deg, #0d4dff 0%, #f4a4c1 100%) 0%
     0% no-repeat padding-box;
   opacity: 0.77;
   border-radius: 50%;
