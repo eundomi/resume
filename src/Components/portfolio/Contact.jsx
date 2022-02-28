@@ -10,14 +10,19 @@ const Contact = () => {
           <ConatactContactWrapper>
             <Title>Contact</Title>
             <Wrapper>
-              <Mail>sandy131712@gmail.com</Mail>
-              <Phone>010-7352-4560</Phone>
+              <Mail href="mailto:sandy131712@gmail.com">
+                sandy131712@gmail.com
+              </Mail>
+              <Phone href="tel:010-7352-4560">010-7352-4560</Phone>
             </Wrapper>
           </ConatactContactWrapper>
           <ContactTextWrapper>
             <Form>
-              <Input placeholder="Name"></Input>
-              <Input placeholder="Email"></Input>
+              <InputWrapper>
+                <Input Name placeholder="Name"></Input>
+                <Input Email placeholder="Email"></Input>
+              </InputWrapper>
+
               <Input message placeholder="Message"></Input>
             </Form>
             <Button>Send</Button>
@@ -66,15 +71,26 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
 `;
-const Mail = styled.a``;
-const Phone = styled.a``;
+const Mail = styled.a`
+  text-decoration: none;
+  color: #4c4c4c;
+  font-size: 1.125rem;
+  position: relative;
+`;
+const Phone = styled.a`
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: #4c4c4c;
+  font-size: 1.125rem;
+  position: relative;
+`;
 const Form = styled.form`
   display: flex;
   flex-direction: column;
   background-color: unset;
 `;
 const Input = styled.input`
-  margin: 10px 0 10px 0;
+  margin: 20px 3rem 20px 0;
   outline: none;
   border: none;
   border-bottom: 1px solid #c3c3c3;
@@ -82,15 +98,22 @@ const Input = styled.input`
   color: #000000;
   font-size: 1.125em;
   ${(props) =>
-    props.Message &&
+    props.Name &&
     css`
-      grid-column: 1/3;
+      width: 50%;
+    `}
+  ${(props) =>
+    props.Email &&
+    css`
+      width: 50%;
     `}
 `;
 const Button = styled.button`
   margin-top: 20px;
+  margin-bottom: 20px;
   height: 50px;
   width: 150px;
+  text-align: center;
   border-radius: 100px;
   border: none;
   background: rgba(0, 0, 0, 0);
@@ -103,4 +126,7 @@ const Button = styled.button`
     background: #8e7cc3;
     opacity: 0.5;
   }
+`;
+const InputWrapper = styled.div`
+  display: flex;
 `;
