@@ -18,18 +18,23 @@ const Project = () => {
         </PlaceWrapper>
         <ContentWrapper>
           <Title>Description</Title>
-          <Content>요리하는 플랫폼입니다.</Content>
+          <Content>요리 레시피를 작성,수정,공유하는 모바일 플랫폼</Content>
           <Title>Role</Title>
           <Content>팀장, 프론트엔드, 백엔드</Content>
           <Title>What did I do</Title>
-          <Content>요리하는 플랫폼입니다.</Content>
+          <Content>- 개발 문서 작성</Content>
+          <Content>- 전체 게시물 페이지 필터링 및 검색</Content>
+          <Content>- DB스키마 생성</Content>
+          <Content>- 전체 API명세 및 레시피 API 작성</Content>
+          <Content>- 서버 배포</Content>
           <Title>Tech Stack</Title>
-          <Content>요리하는 플랫폼입니다.</Content>
+          <Content>REACT Recoil Styled-Components Node.js</Content>
         </ContentWrapper>
         <ContentImageWrapper>
           <Image src={`../images/yorijori.png`}></Image>
         </ContentImageWrapper>
       </BigWrapper>
+
       <BigWrapper>
         <PlaceWrapper>
           <Name>President101</Name>
@@ -39,18 +44,21 @@ const Project = () => {
         </PlaceWrapper>
         <ContentWrapper>
           <Title>Description</Title>
-          <Content>대선정보제공 플랫폼입니다.</Content>
+          <Content>2022 대선 후보 정보 제공 플랫폼</Content>
           <Title>Role</Title>
           <Content>팀장, 프론트엔드</Content>
           <Title>What did I do</Title>
-          <Content>요리하는 플랫폼입니다.</Content>
+          <Content>- 개발 문서 작성</Content>
+          <Content>- 메인페이지 제작</Content>
+          <Content>- 로그인 및 회원가입페이지 제작</Content>
           <Title>Tech Stack</Title>
-          <Content>요리하는 플랫폼입니다.</Content>
+          <Content>HTML5 CSS3 JavaScript Node.js</Content>
         </ContentWrapper>
         <ContentImageWrapper>
           <Image src={`../images/president101.png`}></Image>
         </ContentImageWrapper>
       </BigWrapper>
+
       <BigWrapper>
         <PlaceWrapper>
           <Name>콘돔자판기 최적입지 선정</Name>
@@ -63,12 +71,13 @@ const Project = () => {
           <Title>Role</Title>
           <Content>팀장, 데이터 분석</Content>
           <Title>What did I do</Title>
-          <Content>요리하는 플랫폼입니다.</Content>
+          <Content>- 데이터 수집 및 전처리</Content>
+          <Content>- 유효 데이터 검증</Content>
           <Title>Tech Stack</Title>
-          <Content>요리하는 플랫폼입니다.</Content>
+          <Content>PYTHON Q-GIS</Content>
         </ContentWrapper>
         <ContentImageWrapper>
-          <Image src={`../images/eunjung.jpg`}></Image>
+          <Image src={`../images/location.png`}></Image>
         </ContentImageWrapper>
       </BigWrapper>
     </ProjectWrapper>
@@ -86,7 +95,7 @@ const Subject = styled.h2`
 `;
 const BigWrapper = styled.div`
   display: flex;
-  margin: 20px 0 10px 20px;
+  margin: 50px 0 10px 20px;
 `;
 const PlaceWrapper = styled.div`
   width: 350px;
@@ -97,7 +106,24 @@ const Name = styled.div`
 const Role = styled.div`
   font-size: 1.1rem;
 `;
-const Button = styled.button``;
+const Button = styled.button`
+  margin: 20px 20px 20px 0;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  border-radius: 100px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  background-size: 200% 100%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  border: solid 2px grey;
+  :hover {
+    background: #8e7cc3;
+    opacity: 0.5;
+  }
+`;
 
 const ContentWrapper = styled.div`
   margin: 0 0 0 20px;

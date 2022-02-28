@@ -10,21 +10,27 @@ const Education = () => {
           <Name>엘리스 SW 엔지니어 트랙 1기</Name>
           <Role>2021.10~2022.02 (4개월)</Role>
           <Contents>
-            4개월의 프론트엔드 교육 과정을 통해 기존 지식이 있던 HTML CSS
-            JavaScript에 대한 이해도가 깊어졌고 TypeScript Nodejs Express
-            mongoDB React에 대해 배우게 됐습니다 새로운 언어들을 접하게 되면서
-            좀 더 풍부한 코드작성이 가능해졌습니다. 팀프로젝트를 통해 프로젝트를
-            설계하는 법 오류를 대처하는 법 git을 통한 협업 백엔드에 대한 지식이
-            늘어났습니다. 또한 알고리즘 스터디를 통해 파이썬 언어에 대한 실력이
-            늘게되었고 알고리즘 설계 능력 또한 증가했습니다
+            엘리스 SW 엔지니어 트랙을 통해서 웹 프론트엔드 과정에 필요한
+            JavaScript, React.js, node.js를 배웠습니다.
+            <br />
+            기존과는 다른 새로운 언어들을 접하게 되면서 좀 더 풍부한 코드작성이
+            가능해졌습니다. <br />
+            온라인으로 진행되는 팀프로젝트를 통해 프로젝트를 설계하고 이끌어
+            가는 능력을 키울 수 있었으며 git을 통한 협업의 중요성을 알게
+            되었습니다.
           </Contents>
         </PlaceWrapper>
       </BigWrapper>
       <BigWrapper>
         <PlaceWrapper>
           <Name>공공 빅데이터 교육</Name>
-          <Role>2020.08 ~2020.10 (560시간)</Role>
-          <Contents>공공빅데이터 교육</Contents>
+          <Role>2020.08 ~2020.10 (200시간)</Role>
+          <Contents>
+            R, PYTHON을 이용하여 데이터 전처리 및 분석, QGIS를 통한 지도 분석 및
+            시각화를 어떤방식으로 해야 효율적인지 느끼게 되었고 <br />
+            프로젝트를 진행하는 동안, 데이터 수집, 전처리, 예측을 실제로
+            하게되면서 데이터분석에 대한 전반적인 이해도가 생겼습니다.
+          </Contents>
         </PlaceWrapper>
       </BigWrapper>
       <BigWrapper>
