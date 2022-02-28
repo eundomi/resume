@@ -13,6 +13,8 @@ const PortfolioPage = () => {
       <Circle2></Circle2>
       <Circle3></Circle3>
       <Circle4></Circle4>
+      <Circle5></Circle5>
+      <Circle6></Circle6>
       <Header title="PORTFOLIO"></Header>
       <About></About>
       <Project></Project>
@@ -25,7 +27,7 @@ export default PortfolioPage;
 const PortfolioPageWrapper = styled.div`
   padding: 0 10rem 10rem 10rem;
   margin: 0;
-  background: #e2e4e3;
+  background: #ffffff;
 `;
 
 const Circle = styled.div`
@@ -83,8 +85,31 @@ const Circle4 = styled.div`
   right: 0;
   width: 600px;
   height: 600px;
-  background: transparent linear-gradient(90deg, #00ffa9 0%, #0d4dff 100%) 0% 0%
+  background: transparent linear-gradient(90deg, #aaa3d3 0%, #81c8f2 100%) 0% 0%
     no-repeat padding-box;
   opacity: 0.77;
   border-radius: 50%;
+`;
+
+const Circle5 = styled.div`
+  position: absolute;
+  top: 2600px;
+  left: 0;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: transparent linear-gradient(80deg, #aaa3d3 0%, #81c8f2 100%) 0% 0%
+    no-repeat padding-box;
+  opacity: 0.77;
+`;
+const Circle6 = styled.div`
+  position: absolute;
+  top: 3400px;
+  right: 0;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: transparent linear-gradient(180deg, #4218b8 0%, #0d4dff 100%) 0%
+    0% no-repeat padding-box;
+  opacity: 0.5;
 `;
