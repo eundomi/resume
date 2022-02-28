@@ -133,12 +133,13 @@ const Project = () => {
                 <ProjectItem>
                   상세 설명.
                   <ProjectItemContent>
-                    학교, 청소년 문화시설, 학원, 보건소 및 자치단체에 가중치를
-                    두어
+                    PYTHON과 QGIS를 이용하여 학교, 청소년 문화시설, 학원,
+                    보건소에 가중치를 두어
                     <br />
-                    각 격자별 순위를 지정하였습니다.
+                    각 격자별 순위를 계산하는 방식으로 진행하였습니다.
                     <br />
-                    Python folium을 활용하여 순위별 최적위치를 선정하여
+                    Python folium을 활용하여 순위별 데이터분석과정을 거쳐
+                    최적입지선정을 하였습니다.
                     <br />
                     다중회귀분석을 통한 검증을 하였습니다.
                   </ProjectItemContent>
