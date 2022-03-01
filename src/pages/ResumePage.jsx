@@ -6,6 +6,7 @@ import Project from "../Components/resume/Project";
 import Education from "../Components/resume/Education";
 import Skills from "../Components/resume/Skills";
 import Header from "../Components/header/Header";
+import Footer from "../Components/Common/Footer";
 const ResumePage = () => {
   return (
     <ResumePageWrapper>
@@ -18,12 +19,13 @@ const ResumePage = () => {
         <Education></Education>
         <Skills></Skills>
       </Body>
+      <Footer></Footer>
     </ResumePageWrapper>
   );
 };
 export default ResumePage;
 const Body = styled.div`
-  padding: 16rem 10rem;
+  padding: 16rem 10rem 5rem 10rem;
 
   :before {
     content: "";

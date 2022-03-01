@@ -4,6 +4,7 @@ import Header from "../Components/header/Header";
 import About from "../Components/portfolio/About";
 import Contact from "../Components/portfolio/Contact";
 import Project from "../Components/portfolio/Project";
+import Footer from "../Components/Common/Footer";
 const PortfolioPage = () => {
   return (
     <PortfolioPageWrapper>
@@ -20,12 +21,13 @@ const PortfolioPage = () => {
         <Project></Project>
         <Contact></Contact>
       </Body>
+      <Footer></Footer>
     </PortfolioPageWrapper>
   );
 };
 export default PortfolioPage;
 const Body = styled.div`
-  padding: 16rem 10rem;
+  padding: 16rem 10rem 5rem 10rem;
 
   :before {
     content: "";
