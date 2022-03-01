@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Footer = () => {
   return (
@@ -15,11 +15,14 @@ export default Footer;
 
 const FooterWrapper = styled.footer`
   width: 100%;
+  height: auto;
 `;
 const ContentWrapper = styled.div`
   display: flex;
   justify-content: center;
-  padding: 2rem 0;
+  align-items: center;
+  height: 80px;
+  position: relative;
 `;
 const Content = styled.p`
   font-size: 9px;
