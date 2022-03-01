@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 const TitlePortfolio = (props) => {
-  return <Title>{props.title}</Title>;
+  return (
+    <>
+      <Title>{props.title}</Title>
+    </>
+  );
 };
 
 export default TitlePortfolio;

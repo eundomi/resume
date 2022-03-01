@@ -6,7 +6,7 @@ const Contact = () => {
     <Wrapper>
       <ContentsWrapper>
         <Introduce>
-          사람들에게 새롭고 편리한 경험을 제공해주는 프론트엔드 개발자
+          사용자에게 새롭고 편리한 경험을 제공해주는 프론트엔드 개발자
           손은정입니다.
           <br />
           <br />
