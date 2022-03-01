@@ -5,7 +5,7 @@ import Experience from "../Components/resume/Experience";
 import Project from "../Components/resume/Project";
 import Education from "../Components/resume/Education";
 import Skills from "../Components/resume/Skills";
-import Header from "../Components/header/Header";
+import Header from "../Components/Common/Header";
 import Footer from "../Components/Common/Footer";
 const ResumePage = () => {
   return (

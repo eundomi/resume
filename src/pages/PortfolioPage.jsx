@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "../Components/header/Header";
+import Header from "../Components/Common/Header";
 import About from "../Components/portfolio/About";
 import Contact from "../Components/portfolio/Contact";
 import Project from "../Components/portfolio/Project";
