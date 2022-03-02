@@ -61,10 +61,10 @@ const ContentWrapper = styled.div`
     `}
 
   @media screen and (max-width: 1600px) {
+    z-index: 20;
     position: absolute;
     top: 30rem;
     right: 14rem;
-    z-index: 999999999;
     ${(props) =>
       props.Front &&
       css`

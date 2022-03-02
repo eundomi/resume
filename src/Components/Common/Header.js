@@ -16,12 +16,15 @@ export default Header;
 const HeaderWrapper = styled.div`
   position: fixed;
   width: 100%;
-  z-index: 999;
+  height: 100px;
+  z-index: 50;
 `;
-const Wrapper = styled.h3`
-  padding: 3rem 10rem;
+const Wrapper = styled.div`
+  padding: 0 10rem;
+  height: 100px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 const Title = styled.h3`
   color: #868e96;
