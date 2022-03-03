@@ -17,7 +17,7 @@ const Project = () => {
             <ProjectContent>
               <ProjectList>
                 <ProjectItem>
-                  기간.
+                  <ProjectItemContent>기간.</ProjectItemContent>
                   <ProjectItemContent>2021.01~2021.02 (4주)</ProjectItemContent>
                 </ProjectItem>
                 <ProjectItem>
@@ -72,7 +72,7 @@ const Project = () => {
             <ProjectContent>
               <ProjectList>
                 <ProjectItem>
-                  기간.
+                  <ProjectItemContent>기간.</ProjectItemContent>
                   <ProjectItemContent>2021.12~2021.12 (2주)</ProjectItemContent>
                 </ProjectItem>
                 <ProjectItem>
@@ -233,6 +233,7 @@ const ProjectList = styled.li`
 `;
 const ProjectItem = styled.li`
   display: flex;
+  align-items: baseline;
   flex-wrap: wrap;
 `;
 const ProjectItemContent = styled.p`

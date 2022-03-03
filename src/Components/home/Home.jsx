@@ -63,6 +63,7 @@ const ContentWrapper = styled.div`
   }
 `;
 const Title = styled.h2`
+  font-family: "GmarketSansBold";
   font-size: 5rem;
   margin: 0;
   color: #fff;

@@ -63,11 +63,12 @@ const ContainerList = styled.ul`
   }};
 `;
 const List = styled(Link)`
+  font-family: "GmarketSansBold";
   text-decoration: none;
   color: black;
   box-sizing: border-box;
   display: block;
-  font-size: calc(6vw + 20px);
+  font-size: calc(5vw + 20px);
   padding: 6px 0;
   width: 100%;
   margin: 0 auto;

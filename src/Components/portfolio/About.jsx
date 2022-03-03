@@ -78,7 +78,8 @@ export default About;
 
 const AboutWrapper = styled.div``;
 const Info = styled.h2`
-  font-size: 2rem;
+  font-family: "GongGothicBold";
+  font-size: 3rem;
   font-weight: 700;
   ${(props) =>
     props.title &&

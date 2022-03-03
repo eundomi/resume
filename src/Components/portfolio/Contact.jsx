@@ -152,7 +152,6 @@ const Input = styled.input`
     `}
 `;
 const Message = styled.textarea`
-  font-family: "IBMPlexSansKR";
   font-size: 1em;
   margin: 10px 3rem 20px 0;
   border: 1px solid #c3c3c3;

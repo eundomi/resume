@@ -12,7 +12,12 @@ const ResumePage = () => {
     <ResumePageWrapper>
       <Header title="RESUME"></Header>
       <Body>
-        <Info>안녕하세요, 저는 손은정입니다.</Info>
+        <HighLight>
+          <Info>
+            안녕하세요, <br />
+            저는 손은정입니다.
+          </Info>
+        </HighLight>
         <Contact></Contact>
         <Experience></Experience>
         <Project></Project>
@@ -51,8 +56,24 @@ const ResumePageWrapper = styled.div`
   background: #fff;
 `;
 const Info = styled.div`
+  font-family: "GongGothicBold";
   font-size: 5rem;
   padding-bottom: 3rem;
   margin: 20vh 0px 2rem;
   font-weight: 700;
+  :hover {
+  }
+`;
+
+const HighLight = styled.span`
+  background: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.795));
+  background-repeat: no-repeat;
+  background-size: 0;
+  display: inline;
+  transition: 0.5s ease;
+  width: 100%;
+  height: 100%;
+  :hover {
+    background-size: 100%;
+  }
 `;
