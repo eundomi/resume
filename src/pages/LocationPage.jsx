@@ -1,7 +1,13 @@
 import React from "react";
 import Location from "../Components/pdf/Location";
+import BackHeader from "../Components/Common/BackHeader";
 const LocationPage = () => {
-  return <Location></Location>;
+  return (
+    <>
+      <BackHeader></BackHeader>
+      <Location></Location>
+    </>
+  );
 };
 
 export default LocationPage;
