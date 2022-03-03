@@ -2,6 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import TitlePortfolio from "../Common/TitlePortfolio";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 const Contact = () => {
   function sendMail(e) {
     e.preventDefault();
@@ -10,6 +11,10 @@ const Contact = () => {
       .sendForm("gmail", "template_nfr3qie", e.target, "AtFXMvgVGmkQSl-tU")
       .then((res) => {
         console.log(res);
+        Swal.fire({
+          title: "메일이 전송되었습니다.",
+          icon: "success",
+        });
       })
       .catch((err) => console.log(err));
   }
