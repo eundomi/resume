@@ -1,8 +1,18 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import TitlePortfolio from "../Common/TitlePortfolio";
-
+import emailjs from "@emailjs/browser";
 const Contact = () => {
+  function sendMail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("gmail", "template_nfr3qie", e.target, "AtFXMvgVGmkQSl-tU")
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
+  }
   const autoResizeTextarea = (e) => {
     let textarea = document.querySelector(".autoTextarea");
 
@@ -27,12 +37,7 @@ const Contact = () => {
             </Wrapper>
           </ConatactContactWrapper>
           <ContactTextWrapper>
-            <Form
-              class="gform"
-              method="POST"
-              data-email="sandy131712@gmail.com"
-              action="https://script.google.com/macros/s/AKfycbyk4Ux9hglooPmJR5w3bKqIpN8L-8OgLTrEdU1x0cqSyEzDaGbapHsA-EYUJqwE3efq/exec"
-            >
+            <Form onSubmit={sendMail}>
               <InputWrapper>
                 <Input
                   Name
@@ -45,7 +50,7 @@ const Contact = () => {
                   Email
                   placeholder="Email"
                   type="email"
-                  name="email"
+                  name="user_email"
                   required
                 ></Input>
               </InputWrapper>
