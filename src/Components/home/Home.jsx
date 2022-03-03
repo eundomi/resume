@@ -1,11 +1,9 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import Footer from "../Common/Footer";
-import Header from "../Common/Header";
+
 const Home = () => {
   return (
-    <HomeWrapper>
-      <Header title={"EUNDOMI"}></Header>
+    <>
       <ContentWrapper>
         <Title Front>Developer ;</Title>
       </ContentWrapper>
@@ -16,26 +14,17 @@ const Home = () => {
         <ContentWrapper Front>
           <Title>I’m FrontEnd</Title>
         </ContentWrapper>
-
         <Wrapper>
           <Caution>
             이력서 또는 포트폴리오는 메뉴 또는 위의 버튼을 통해 확인해주세요.{" "}
           </Caution>
         </Wrapper>
       </Body>
-      <Footer></Footer>
-    </HomeWrapper>
+    </>
   );
 };
 export default Home;
 
-const HomeWrapper = styled.div`
-  background-color: #fff;
-  display: flex;
-  max-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
-`;
 const Body = styled.div`
   height: 100vh;
 `;

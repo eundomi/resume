@@ -1,7 +1,17 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import TitlePortfolio from "../Common/TitlePortfolio";
+
 const Contact = () => {
+  const autoResizeTextarea = (e) => {
+    let textarea = document.querySelector(".autoTextarea");
+
+    if (textarea) {
+      textarea.style.height = "auto";
+      let height = textarea.scrollHeight;
+      textarea.style.height = `${height}px`;
+    }
+  };
   return (
     <ContactWrapper>
       <TitlePortfolio title={"CONTACT"}></TitlePortfolio>
@@ -10,22 +20,47 @@ const Contact = () => {
           <ConatactContactWrapper>
             <Title>Contact</Title>
             <Wrapper>
-              <Mail href="mailto:sandy131712@gmail.com">
+              <Info href="mailto:sandy131712@gmail.com">
                 sandy131712@gmail.com
-              </Mail>
-              <Phone href="tel:010-7352-4560">010-7352-4560</Phone>
+              </Info>
+              <Info href="tel:010-7352-4560">010-7352-4560</Info>
             </Wrapper>
           </ConatactContactWrapper>
           <ContactTextWrapper>
-            <Form>
+            <Form
+              class="gform"
+              method="POST"
+              data-email="sandy131712@gmail.com"
+              action="https://script.google.com/macros/s/AKfycbyk4Ux9hglooPmJR5w3bKqIpN8L-8OgLTrEdU1x0cqSyEzDaGbapHsA-EYUJqwE3efq/exec"
+            >
               <InputWrapper>
-                <Input Name placeholder="Name"></Input>
-                <Input Email placeholder="Email"></Input>
+                <Input
+                  Name
+                  placeholder="Name"
+                  type="name"
+                  name="name"
+                  required
+                ></Input>
+                <Input
+                  Email
+                  placeholder="Email"
+                  type="email"
+                  name="email"
+                  required
+                ></Input>
               </InputWrapper>
 
-              <Input message placeholder="Message"></Input>
+              <Message
+                placeholder="Message"
+                type="text"
+                name="message"
+                className="autoTextarea"
+                required
+                onKeyDown={autoResizeTextarea}
+                onKeyUp={autoResizeTextarea}
+              ></Message>
+              <Button type="submit">Send </Button>
             </Form>
-            <Button>Send</Button>
           </ContactTextWrapper>
         </ContactElementWrapper>
       </ContentWrapper>
@@ -71,18 +106,15 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
 `;
-const Mail = styled.a`
+const Info = styled.a`
+  margin-bottom: 10px;
   text-decoration: none;
   color: #4c4c4c;
   font-size: 1.125rem;
   position: relative;
-`;
-const Phone = styled.a`
-  text-decoration: none;
-  margin-bottom: 20px;
-  color: #4c4c4c;
-  font-size: 1.125rem;
-  position: relative;
+  :first-child {
+    margin-top: 20px;
+  }
 `;
 const Form = styled.form`
   display: flex;
@@ -96,7 +128,7 @@ const Input = styled.input`
   border-bottom: 1px solid #c3c3c3;
   background-color: unset;
   color: #000000;
-  font-size: 1.125em;
+  font-size: 1em;
   ${(props) =>
     props.Name &&
     css`
@@ -108,8 +140,17 @@ const Input = styled.input`
       width: 50%;
     `}
 `;
+const Message = styled.textarea`
+  font-family: "IBMPlexSansKR";
+  font-size: 1em;
+  margin: 10px 3rem 20px 0;
+  border: 1px solid #c3c3c3;
+  border-radius: 10px;
+  height: auto;
+  padding: 10px;
+`;
 const Button = styled.button`
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
   height: 50px;
   width: 150px;
