@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 import TitlePortfolio from "../Common/TitlePortfolio";
 
@@ -53,7 +54,9 @@ const Project = () => {
               </ProjectList>
             </ProjectContent>
             <ButtonWrapper>
-              <Button>VIEW MORE</Button>
+              <Link to="/yorijori">
+                <Button>VIEW MORE</Button>
+              </Link>
               <Button>GITHUB</Button>
             </ButtonWrapper>
           </Contents>
@@ -97,7 +100,9 @@ const Project = () => {
               </ProjectList>
             </ProjectContent>
             <ButtonWrapper>
-              <Button>VIEW MORE</Button>
+              <Link to="/president101">
+                <Button>VIEW MORE</Button>
+              </Link>
               <Button>GITHUB</Button>
             </ButtonWrapper>
           </Contents>
@@ -147,7 +152,9 @@ const Project = () => {
               </ProjectList>
             </ProjectContent>
             <ButtonWrapper>
-              <Button>VIEW MORE</Button>
+              <Link to="/location">
+                <Button>VIEW MORE</Button>
+              </Link>
             </ButtonWrapper>
           </Contents>
         </Wrapper>
