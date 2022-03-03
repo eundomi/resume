@@ -15,6 +15,7 @@ const Contact = () => {
           title: "메일이 전송되었습니다.",
           icon: "success",
         });
+        e.target.reset();
       })
       .catch((err) => console.log(err));
   }
