@@ -147,7 +147,7 @@ const ImageSkill = styled.img`
 
   :hover {
     opacity: 0.7;
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
   }
 `;
 const ImageWrapper = styled.div`

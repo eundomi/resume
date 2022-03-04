@@ -15,7 +15,6 @@ const Menu = () => {
               setClick(!click);
               const changeText = click === false ? "CLOSE" : "MENU";
               setCurrentText(changeText);
-              console.log(click);
             }}
           >
             {currentText}
@@ -33,15 +32,15 @@ const Menu = () => {
 };
 
 export default Menu;
+const smoothAppear = keyframes`from {
+  opacity: 0;
+  transform: translateY(-5%);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}`;
 
-const slideUp = keyframes`
-    from {
-        transform: translateY(200px); 
-    }
-    to {
-        transform: translateY(0px);
-    }
-`;
 const MenuWrapper = styled.div``;
 const Bar = styled.div``;
 
@@ -80,7 +79,7 @@ const List = styled(Link)`
   }
   animation-duration: 0.75s;
   animation-timing-function: ease-out;
-  animation-name: ${slideUp};
+  animation-name: ${smoothAppear};
   animation-fill-mode: forwards;
 `;
 const Icon = styled.div`
