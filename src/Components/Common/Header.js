@@ -20,7 +20,7 @@ const HeaderWrapper = styled.div`
   z-index: 50;
 `;
 const Wrapper = styled.div`
-  padding: 0 10rem;
+  padding: 0 10vw;
   height: 100px;
   display: flex;
   justify-content: space-between;
