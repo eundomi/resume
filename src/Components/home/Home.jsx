@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-
+import Page from "./Page";
 const Home = () => {
   return (
     <>
@@ -21,8 +21,9 @@ const Home = () => {
 
         <Wrapper>
           <Caution>
-            이력서 또는 포트폴리오는 메뉴 또는 위의 버튼을 통해 확인해주세요.{" "}
+            이력서 ,포트폴리오는 메뉴 또는 아래의 버튼을 통해 이동해주세요.{" "}
           </Caution>
+          <Page></Page>
         </Wrapper>
       </Body>
     </>
@@ -127,16 +128,16 @@ const Title = styled.h2`
     width: max-content;
   }
 `;
-
-const Caution = styled.p`
-  top: 16rem;
-  right: 14rem;
-  font-size: 0.9rem;
-  margin: 2rem 0;
-`;
 const Wrapper = styled.div`
   position: absolute;
-  top: 84%;
+  bottom: 0;
   width: 100%;
   text-align: center;
+`;
+const Caution = styled.p`
+  color: #fff;
+  font-size: 1.6vh;
+  text-shadow: 1px 1px 1px #000;
+  margin: 0;
+  padding: 0vh;
 `;

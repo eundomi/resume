@@ -8,7 +8,6 @@ const HomePage = () => {
     <HomePageWrapper>
       <Header title={"EUNDOMI"}></Header>
       <Home></Home>
-      <Footer></Footer>
     </HomePageWrapper>
   );
 };
