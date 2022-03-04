@@ -10,14 +10,12 @@ const Education = () => {
           <Name>엘리스 SW 엔지니어 트랙 1기</Name>
           <Role>2021.10~2022.02 (4개월)</Role>
           <Contents>
-            엘리스 SW 엔지니어 트랙을 통해서 웹 프론트엔드 과정에 필요한
-            JavaScript, React.js, node.js를 배웠습니다.
+            웹 프론트엔드로서 필요한 JavaScript, React.js, node.js를 배웠습니다.
             <br />
-            기존과는 다른 새로운 언어들을 접하게 되면서 좀 더 풍부한 코드작성이
-            가능해졌습니다. <br />
-            온라인으로 진행되는 팀프로젝트를 통해 프로젝트를 설계하고 이끌어
-            가는 능력을 키울 수 있었으며 git을 통한 협업의 중요성을 알게
-            되었습니다.
+            기존과는 다루던 PYTHON과는 다른 새로운 언어들을 접하게 되면서 더
+            많은 기능을 구현할 수 있게 되었습니다. <br />
+            팀프로젝트를 통해 프로젝트를 기획하고 팀장으로서 팀을 이끌어 가는
+            능력을 키울 수 있었으며 git을 통한 협업의 중요성을 알게 되었습니다.
           </Contents>
         </PlaceWrapper>
       </BigWrapper>
@@ -40,7 +38,8 @@ const Education = () => {
           <Role>2014.03 ~ 2020.02</Role>
           <Contents>
             컴퓨터공학과에서 4년간 공부하며 컴퓨터구조, 자료구조, 컴퓨터
-            네트워크 등 과목들을 우수한 성적으로 이수하였습니다. <br />
+            네트워크 등 과목들을 4.5만점에 3.79점의 성적으로 졸업하였습니다.{" "}
+            <br />
             중간에 워킹홀리데이를 2년간 다녀와서 다소 늦게 졸업하였습니다.
           </Contents>
         </PlaceWrapper>
@@ -51,7 +50,7 @@ const Education = () => {
 export default Education;
 
 const EducationWrapper = styled.div`
-  padding: 10px 0;
+  margin-top: 20vh;
 `;
 const Subject = styled.h2`
   font-size: 3rem;

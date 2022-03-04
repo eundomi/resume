@@ -18,23 +18,27 @@ const Contact = () => {
           <ContactWrapper>
             <Subject>Contact</Subject>
             <Content>
-              E-mail. sandy131712@gmail.com
+              <strong>E-mail</strong> sandy131712@gmail.com
               <br />
-              Phone. 01073524560
+              <strong>Phone</strong> 01073524560
             </Content>
           </ContactWrapper>
           <ChannelWrapper>
             <Subject>Channel</Subject>
-            <Content>
-              Blog.
-              <a href="https://eundomi.tistory.com/">
-                https://eundomi.tistory.com/
-              </a>
+            <Content
+              onClick={() =>
+                window.open("https://eundomi.tistory.com/", "_blank")
+              }
+            >
+              <strong>Blog</strong> https://eundomi.tistory.com/
               <br />
-              GitHub.
-              <a href="https://github.com/eundomi">
-                https://github.com/eundomi
-              </a>
+            </Content>
+            <Content
+              onClick={() =>
+                window.open("https://github.com/eundomi", "_blank")
+              }
+            >
+              <strong>GitHub</strong> https://github.com/eundomi
             </Content>
           </ChannelWrapper>
         </ContactChannelWrapper>
@@ -50,6 +54,10 @@ export default Contact;
 const Wrapper = styled.div`
   display: flex;
   padding: 10px 0;
+  @media screen and (max-width: 1300px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 `;
 const ImageWrapper = styled.div``;
 const Image = styled.img`
@@ -57,12 +65,18 @@ const Image = styled.img`
   object-fit: cover;
   border-radius: 50%;
   margin-left: 80px;
+  @media screen and (max-width: 1300px) {
+    margin-left: 0;
+  }
 `;
 const ContentsWrapper = styled.div`
   margin: auto;
   width: 90%;
   position: relative;
   object-fit: cover;
+  @media screen and (max-width: 1300px) {
+    margin: 3vh 0;
+  }
 `;
 const Introduce = styled.p`
   font-size: 1.5rem;
@@ -75,7 +89,7 @@ const Subject = styled.h2`
   margin: 0 0 10px 0;
 `;
 const Content = styled.p`
-  font-size: 1.2rem;
+  cursor: pointer;
   margin: 2px;
   margin-left: 10px;
 `;

@@ -4,6 +4,7 @@ import Contact from "../Components/resume/Contact";
 import Experience from "../Components/resume/Experience";
 import Project from "../Components/resume/Project";
 import Education from "../Components/resume/Education";
+import Certificate from "../Components/resume/Certificate";
 import Skills from "../Components/resume/Skills";
 import Header from "../Components/Common/Header";
 import Footer from "../Components/Common/Footer";
@@ -12,16 +13,16 @@ const ResumePage = () => {
     <ResumePageWrapper>
       <Header title="RESUME"></Header>
       <Body>
-        <HighLight>
-          <Info>
-            안녕하세요, <br />
-            저는 손은정입니다.
-          </Info>
-        </HighLight>
+        <Info>
+          안녕하세요, <br />
+          저는 손은정입니다.
+        </Info>
+
         <Contact></Contact>
         <Experience></Experience>
         <Project></Project>
         <Education></Education>
+        <Certificate></Certificate>
         <Skills></Skills>
       </Body>
       <Footer></Footer>
@@ -30,7 +31,7 @@ const ResumePage = () => {
 };
 export default ResumePage;
 const Body = styled.div`
-  padding: 16rem 10rem 5rem 10rem;
+  padding: 16vh 10vw 5vh 10vw;
 
   :before {
     content: "";
@@ -57,23 +58,11 @@ const ResumePageWrapper = styled.div`
 `;
 const Info = styled.div`
   font-family: "GongGothicBold";
-  font-size: 5rem;
-  padding-bottom: 3rem;
-  margin: 20vh 0px 2rem;
+  font-size: 5vw;
+  padding-bottom: 3vh;
+  margin: 20vh 0px 3vh;
   font-weight: 700;
-  :hover {
-  }
-`;
-
-const HighLight = styled.span`
-  background: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.795));
-  background-repeat: no-repeat;
-  background-size: 0;
-  display: inline;
-  transition: 0.5s ease;
-  width: 100%;
-  height: 100%;
-  :hover {
-    background-size: 100%;
+  @media screen and (max-width: 1300px) {
+    padding-bottom: 0;
   }
 `;

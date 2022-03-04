@@ -86,7 +86,7 @@ const Project = () => {
 export default Project;
 
 const ProjectWrapper = styled.div`
-  padding: 10px 0;
+  margin-top: 20vh;
 `;
 const Subject = styled.h2`
   font-size: 3rem;
@@ -96,9 +96,15 @@ const Subject = styled.h2`
 const BigWrapper = styled.div`
   display: flex;
   margin: 50px 0 10px 20px;
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+  }
 `;
 const PlaceWrapper = styled.div`
   width: 350px;
+  @media screen and (max-width: 1300px) {
+    width: 100%;
+  }
 `;
 const Name = styled.div`
   font-size: 2rem;
@@ -106,31 +112,35 @@ const Name = styled.div`
 const Role = styled.div`
   font-size: 1.1rem;
 `;
+
 const Button = styled.button`
+  font-family: "GmarketSansLight";
   margin: 20px 20px 20px 0;
   height: 50px;
   width: 100px;
   text-align: center;
   border-radius: 100px;
-  border: none;
   background: rgba(0, 0, 0, 0);
   background-size: 200% 100%;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   letter-spacing: 0.1em;
-  border: solid 2px grey;
+  border: solid 1px grey;
+
   :hover {
-    background: #8e7cc3;
-    opacity: 0.5;
+    background: #feae11;
+    border: none;
   }
 `;
-
 const ContentWrapper = styled.div`
   margin: 0 0 0 20px;
   width: 400px;
 `;
 const ContentImageWrapper = styled.div`
   margin-left: auto;
+  @media screen and (max-width: 1300px) {
+    margin-left: 0;
+  }
 `;
 
 const Title = styled.p`
@@ -147,4 +157,7 @@ const Image = styled.img`
   width: 500px;
   object-fit: cover;
   margin-left: auto;
+  @media screen and (max-width: 1300px) {
+    margin: 20px 0 0 20px;
+  }
 `;

@@ -66,7 +66,7 @@ const Skills = () => {
 export default Skills;
 
 const SkillsWrapper = styled.div`
-  padding: 10px 0;
+  margin-top: 20vh;
 `;
 const Subject = styled.h2`
   font-size: 3rem;

@@ -7,7 +7,10 @@ const Experience = () => {
       <Subject>Work Experience</Subject>
       <BigWrapper>
         <PlaceWrapper>
-          <Name>DGIST <br/>(대구경북과학기술원)</Name>
+          <Name>
+            DGIST <br />
+            (대구경북과학기술원)
+          </Name>
           <Role>정보전산팀 | 기술원</Role>
           <Period>2021.04.~2021.10</Period>
         </PlaceWrapper>
@@ -18,7 +21,7 @@ const Experience = () => {
       <BigWrapper>
         <PlaceWrapper>
           <Name>대구상수도사업본부</Name>
-          <Role>인턴</Role>
+          <Role>정보통신과 | 인턴</Role>
           <Period>2020.09.~2020.12</Period>
         </PlaceWrapper>
         <ContentWrapper>
@@ -31,7 +34,7 @@ const Experience = () => {
 export default Experience;
 
 const ExperienceWrapper = styled.div`
-  padding: 10px 0;
+  margin-top: 20vh;
 `;
 const Subject = styled.h2`
   font-size: 3rem;
@@ -41,9 +44,16 @@ const Subject = styled.h2`
 const BigWrapper = styled.div`
   display: flex;
   margin: 20px 0 10px 20px;
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+  }
 `;
 const PlaceWrapper = styled.div`
-  width: 390px;
+  width: 30%;
+  @media screen and (max-width: 1300px) {
+    width: 100%;
+    margin-left: 40px;
+  }
 `;
 const Name = styled.div`
   font-size: 2rem;
@@ -55,6 +65,7 @@ const Period = styled.div`
   font-size: 1.1rem;
 `;
 const ContentWrapper = styled.div`
+  width: 70%;
   margin: 0 0 0 40px;
 `;
 const Content = styled.p`
