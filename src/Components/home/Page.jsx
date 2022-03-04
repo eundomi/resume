@@ -20,20 +20,6 @@ const PageWrapper = styled.div`
   justify-content: center;
   padding: 0;
 `;
-const ImageWrapper = styled.div`
-  margin: 5vh 1vw;
-
-  :hover {
-    :first-child > img {
-      opacity: 1;
-      transform: scale(1.1);
-      filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
-    }
-  }
-`;
-const Image = styled.img`
-  height: 10vh;
-`;
 const StyledLink = styled(Link)`
   text-decoration: none;
   padding: 0 1vw;
@@ -42,21 +28,6 @@ const StyledLink = styled(Link)`
     text-decoration: none;
   }
 `;
-// const Text = styled.button`
-//   font-family: Pacifico;
-//   // font-family: "GmarketSansBold";
-//   color: #fff;
-//   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-//   font-size: 4vh;
-//   margin: 0;
-//   padding: 2vh 1vh 8vh 1vh;
-//   :hover {
-//     color: #feae11;
-//     text-shadow: -1px 0 #feae11, 0 1px #feae11, 1px 0 #feae11, 0 -1px #feae11;
-//     opacity: 1;
-//     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
-//   }
-// `;
 const Text = styled.button`
   font-family: "GmarketSansLight";
   margin: 0 10px 0 0;

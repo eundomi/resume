@@ -27,7 +27,7 @@ const PortfolioPage = () => {
 };
 export default PortfolioPage;
 const Body = styled.div`
-  padding: 16rem 10rem 5rem 10rem;
+  padding: 16vh 10vw 5vh 10vw;
 
   :before {
     content: "";
@@ -60,7 +60,7 @@ const Circle = styled.div`
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: transparent linear-gradient(80deg, #fff 0%, #81c8f2 100%) 0% 0%
+  background: transparent linear-gradient(80deg, #fff 0%, #feae11 100%) 0% 0%
     no-repeat padding-box;
   opacity: 0.77;
 `;
@@ -72,7 +72,7 @@ const Circle1 = styled.div`
   width: 683px;
   height: 682px;
   background: transparent
-    linear-gradient(180deg, #fff 0%, #81c8f2 50%, #4218b8 100%) 0% 0% no-repeat
+    linear-gradient(180deg, #fff 0%, #fe7e71 50%, #fe7e71 100%) 0% 0% no-repeat
     padding-box;
   opacity: 0.77;
   border-radius: 50%;
@@ -97,7 +97,7 @@ const Circle3 = styled.div`
   right: 0;
   width: 400px;
   height: 400px;
-  background: transparent linear-gradient(180deg, #0d4dff 0%, #f4a4c1 100%) 0%
+  background: transparent linear-gradient(180deg, #a24d90 0%, #f4a4c1 100%) 0%
     0% no-repeat padding-box;
   opacity: 0.77;
   border-radius: 50%;
@@ -109,7 +109,7 @@ const Circle4 = styled.div`
   right: 0;
   width: 600px;
   height: 600px;
-  background: transparent linear-gradient(90deg, #aaa3d3 0%, #81c8f2 100%) 0% 0%
+  background: transparent linear-gradient(90deg, #fe7e71 0%, #a24d90 100%) 0% 0%
     no-repeat padding-box;
   opacity: 0.77;
   border-radius: 50%;
@@ -122,8 +122,8 @@ const Circle5 = styled.div`
   width: 800px;
   height: 800px;
   border-radius: 50%;
-  background: transparent linear-gradient(80deg, #aaa3d3 0%, #81c8f2 100%) 0% 0%
-    no-repeat padding-box;
+  background: transparent linear-gradient(80deg, ##ffeccb 0%, #c25450 100%) 0%
+    0% no-repeat padding-box;
   opacity: 0.77;
 `;
 const Circle6 = styled.div`
@@ -133,7 +133,7 @@ const Circle6 = styled.div`
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background: transparent linear-gradient(180deg, #4218b8 0%, #0d4dff 100%) 0%
+  background: transparent linear-gradient(180deg, #ffc1b6 0%, #a98c66 100%) 0%
     0% no-repeat padding-box;
   opacity: 0.5;
 `;

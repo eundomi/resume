@@ -80,7 +80,9 @@ const Contact = () => {
 };
 
 export default Contact;
-const ContactWrapper = styled.div``;
+const ContactWrapper = styled.div`
+  margin-top: 25vh;
+`;
 const ContentWrapper = styled.div`
   background-color: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(6px);
@@ -94,6 +96,9 @@ const ContactElementWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 30px 30px 30px 30px;
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+  }
 `;
 const ConatactContactWrapper = styled.div`
   display: flex;
@@ -106,6 +111,9 @@ const ContactTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  @media screen and (max-width: 1300px) {
+    margin-left: 0;
+  }
 `;
 const Title = styled.h3`
   font-size: 3.438rem;
@@ -133,23 +141,25 @@ const Form = styled.form`
   background-color: unset;
 `;
 const Input = styled.input`
-  margin: 20px 3rem 20px 0;
+  margin: 20px 0 20px 0;
   outline: none;
   border: none;
   border-bottom: 1px solid #c3c3c3;
   background-color: unset;
   color: #000000;
-  font-size: 1em;
+  
   ${(props) =>
     props.Name &&
     css`
-      width: 50%;
+      width: 48%;
     `}
   ${(props) =>
     props.Email &&
     css`
-      width: 50%;
+      width: 48%;
     `}
+    
+  }
 `;
 const Message = styled.textarea`
   font-size: 1em;
@@ -158,6 +168,9 @@ const Message = styled.textarea`
   border-radius: 10px;
   height: auto;
   padding: 10px;
+  @media screen and (max-width: 1300px) {
+    margin: 10px 0 20px 0;
+  }
 `;
 const Button = styled.button`
   margin-top: 10px;
@@ -177,7 +190,11 @@ const Button = styled.button`
     background: #8e7cc3;
     opacity: 0.5;
   }
+  @media screen and (max-width: 1300px) {
+    width: 100%;
+  }
 `;
 const InputWrapper = styled.div`
   display: flex;
+  justify-content: space-between;
 `;

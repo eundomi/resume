@@ -29,15 +29,16 @@ const About = () => {
               사용자들의 니즈를 충족시킬수 있는 개발자의 꿈을 꾸고 있습니다.
               <br />
               <br />
-              늘 사용자의 관점에서 생각하며 더 효율적인 방법을 생각하겠습니다.
+              늘 사용자의 관점에서 생각하며 효율적이고 간편하게 이용할 수 있는
+              방안을 생각하겠습니다.
               <br />
               다른 부서와의 협업을 통하여, 근본적인 문제를 해결할수 있는 사람이
               되고싶습니다.
               <br />
               <br />
-              모두가 만족하는 최적의 솔루션을 제공할 수 있는
+              모두가 만족하는 최적의 솔루션을 제공할 수 있도록
               <Underline
-                content={"통찰력과 창의력이 있는 개발자가 되겠습니다."}
+                content={" 통찰력과 창의력이 있는 개발자가 되겠습니다."}
               ></Underline>
               <br />
             </Contents>
@@ -86,6 +87,10 @@ const Info = styled.h2`
     css`
       text-align: center;
     `}
+  @media screen and (max-width: 1300px) {
+    font-size: 4vh;
+    text-align: center;
+  }
 `;
 const ContentWrapper = styled.div`
   background-color: rgba(255, 255, 255, 0.25);
@@ -103,15 +108,22 @@ const OtherWrapper = styled.div`
   display: flex;
   margin: 0;
   padding: 0;
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 const SkillsContent = styled.div`
   width: 50%;
   height: auto;
-  margin: 0 15px 40px 40px;
+  margin: 0 30px 40px 30px;
+  @media screen and (max-width: 1300px) {
+    width: 100%;
+  }
 `;
 const ChannelWrapper = styled.div`
   width: 50%;
-  height: auto;
+  height: 100%;
   margin: 0 30px 40px 15px;
 `;
 
@@ -121,10 +133,17 @@ const Contents = styled.div`
   strong {
     font-size: 1.3rem;
   }
+  @media screen and (max-width: 1300px) {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
 `;
 const Wrapper = styled.div`
   display: flex;
   padding: 20px 20px 0 20px;
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+  }
 `;
 const Image = styled.img`
   display: flex;
@@ -165,6 +184,6 @@ const ImageWrappers = styled.div`
     props.channel &&
     css`
       display: flex;
-      height: 160px;
+      height: 100%;
     `}
 `;
