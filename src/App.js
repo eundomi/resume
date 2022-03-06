@@ -10,7 +10,7 @@ import President101Page from "./pages/President101Page";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
