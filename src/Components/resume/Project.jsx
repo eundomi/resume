@@ -31,7 +31,7 @@ const Project = () => {
           <Content>REACT Recoil Styled-Components Node.js</Content>
         </ContentWrapper>
         <ContentImageWrapper>
-          <Image src={`../images/yorijori.png`}></Image>
+          <Image src={`${process.env.PUBLIC_URL}/images/yorijori.png`}></Image>
         </ContentImageWrapper>
       </BigWrapper>
 
@@ -55,7 +55,9 @@ const Project = () => {
           <Content>HTML5 CSS3 JavaScript Node.js</Content>
         </ContentWrapper>
         <ContentImageWrapper>
-          <Image src={`../images/president101.png`}></Image>
+          <Image
+            src={`${process.env.PUBLIC_URL}/images/president101.png`}
+          ></Image>
         </ContentImageWrapper>
       </BigWrapper>
 
@@ -77,7 +79,7 @@ const Project = () => {
           <Content>PYTHON Q-GIS</Content>
         </ContentWrapper>
         <ContentImageWrapper>
-          <Image src={`../images/location.png`}></Image>
+          <Image src={`${process.env.PUBLIC_URL}/images/location.png`}></Image>
         </ContentImageWrapper>
       </BigWrapper>
     </ProjectWrapper>

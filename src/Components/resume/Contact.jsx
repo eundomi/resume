@@ -44,7 +44,7 @@ const Contact = () => {
         </ContactChannelWrapper>
       </ContentsWrapper>
       <ImageWrapper>
-        <Image src={`../images/eunjung.jpg`}></Image>
+        <Image src={`${process.env.PUBLIC_URL}/images/eunjung.jpg`}></Image>
       </ImageWrapper>
     </Wrapper>
   );

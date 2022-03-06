@@ -12,7 +12,9 @@ const About = () => {
           <Info>"안녕하세요, 프론트엔드 개발자 손은정입니다."</Info>
           <Wrapper>
             <ImageWrapper>
-              <Image src={`../images/eunjung.jpg`}></Image>
+              <Image
+                src={`${process.env.PUBLIC_URL}/images/eunjung.jpg`}
+              ></Image>
             </ImageWrapper>
             <Contents>
               <strong>
@@ -48,24 +50,46 @@ const About = () => {
           <SkillsContent>
             <Info title>Skills</Info>
             <ImageWrappers>
-              <ImageSkill src={`../images/skill1.png`}></ImageSkill>
-              <ImageSkill src={`../images/skill2.png`}></ImageSkill>
-              <ImageSkill src={`../images/skill3.png`}></ImageSkill>
-              <ImageSkill src={`../images/skill8.png`}></ImageSkill>
-              <ImageSkill src={`../images/skill4.png`}></ImageSkill>
-              <ImageSkill src={`../images/skill5.png`}></ImageSkill>
-              <ImageSkill src={`../images/skill6.png`}></ImageSkill>
-              <ImageSkill src={`../images/skill7.png`}></ImageSkill>
+              <ImageSkill
+                src={`${process.env.PUBLIC_URL}/images/skill1.png`}
+              ></ImageSkill>
+              <ImageSkill
+                src={`${process.env.PUBLIC_URL}/images/skill2.png`}
+              ></ImageSkill>
+              <ImageSkill
+                src={`${process.env.PUBLIC_URL}/images/skill3.png`}
+              ></ImageSkill>
+              <ImageSkill
+                src={`${process.env.PUBLIC_URL}/images/skill8.png`}
+              ></ImageSkill>
+              <ImageSkill
+                src={`${process.env.PUBLIC_URL}/images/skill4.png`}
+              ></ImageSkill>
+              <ImageSkill
+                src={`${process.env.PUBLIC_URL}/images/skill5.png`}
+              ></ImageSkill>
+              <ImageSkill
+                src={`${process.env.PUBLIC_URL}/images/skill6.png`}
+              ></ImageSkill>
+              <ImageSkill
+                src={`${process.env.PUBLIC_URL}/images/skill7.png`}
+              ></ImageSkill>
             </ImageWrappers>
           </SkillsContent>
           <ChannelWrapper>
             <Info title>Channel</Info>
             <ImageWrappers channel>
               <a href="https://github.com/eundomi">
-                <ImageSkill title src={`../images/GitHub.png`}></ImageSkill>
+                <ImageSkill
+                  title
+                  src={`${process.env.PUBLIC_URL}/images/GitHub.png`}
+                ></ImageSkill>
               </a>
               <a href="https://eundomi.tistory.com/">
-                <ImageSkill title src={`../images/tistory.svg`}></ImageSkill>
+                <ImageSkill
+                  title
+                  src={`${process.env.PUBLIC_URL}/images/tistory.svg`}
+                ></ImageSkill>
               </a>
             </ImageWrappers>
           </ChannelWrapper>

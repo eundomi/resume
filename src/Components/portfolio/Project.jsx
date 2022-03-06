@@ -10,7 +10,9 @@ const Project = () => {
       <ContentWrapper>
         <Wrapper>
           <ImageWrapper>
-            <Image src={`../images/yorijori.png`}></Image>
+            <Image
+              src={`${process.env.PUBLIC_URL}/images/yorijori.png`}
+            ></Image>
           </ImageWrapper>
           <Contents>
             <ProjectName>요리조리 (Yori-Jori)</ProjectName>
@@ -83,7 +85,9 @@ const Project = () => {
       <ContentWrapper>
         <Wrapper>
           <ImageWrapper>
-            <Image src={`../images/president101.png`}></Image>
+            <Image
+              src={`${process.env.PUBLIC_URL}/images/president101.png`}
+            ></Image>
           </ImageWrapper>
           <Contents>
             <ProjectName>PRESIDENT 101</ProjectName>
@@ -148,7 +152,9 @@ const Project = () => {
       <ContentWrapper>
         <Wrapper>
           <ImageWrapper>
-            <Image src={`../images/location.png`}></Image>
+            <Image
+              src={`${process.env.PUBLIC_URL}/images/location.png`}
+            ></Image>
           </ImageWrapper>
           <Contents>
             <ProjectName>

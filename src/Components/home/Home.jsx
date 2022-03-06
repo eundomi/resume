@@ -16,7 +16,10 @@ const Home = () => {
       </MobileUnderline>
       <Body>
         <ImageWrapper>
-          <Image src={`../images/Eundomi.png`}></Image>
+          <Image
+            src={`${process.env.PUBLIC_URL}/images/Eundomi.png`}
+            alt="arrow.png"
+          ></Image>
         </ImageWrapper>
 
         <Wrapper>
