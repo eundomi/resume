@@ -17,9 +17,11 @@ const Contact = () => {
         <ContactChannelWrapper>
           <ContactWrapper>
             <Subject>Contact</Subject>
-            <Content>
+            <Content href="mailto:sandy131712@gmail.com">
               <strong>E-mail</strong> sandy131712@gmail.com
               <br />
+            </Content>
+            <Content href="tel:010-7352-4560">
               <strong>Phone</strong> 01073524560
             </Content>
           </ContactWrapper>
@@ -88,7 +90,9 @@ const Subject = styled.h2`
   font-weight: 700;
   margin: 0 0 10px 0;
 `;
-const Content = styled.p`
+const Content = styled.a`
+  text-decoration: none;
+  color: #111;
   cursor: pointer;
   margin: 2px;
   margin-left: 10px;

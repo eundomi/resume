@@ -25,16 +25,15 @@ const Skills = () => {
         </PlaceWrapper>
         <PlaceWrapper>
           <Language>React</Language>
-          <Contents>리액트 내의 전역 상태관리가 가능합니다.</Contents>
+          <Contents>
+            {" "}
+            함수형 컴포넌트 방식에 익숙합니다. 중복 코드를 커스텀 훅이나
+            컴포넌트로 분리할 수 있습니다.
+          </Contents>
         </PlaceWrapper>
         <PlaceWrapper>
           <Language>Recoil</Language>
-          <Contents>
-            ES6+ 문법을 공부하고 코드에 적용하려고 합니다. Vanila JS만을
-            사용해서 WEB APP을 개발해 본 경험이 있습니다. <br />
-            JavaScript코드가 어떤 과정을 통해서 동작하는지 이해하고 있습니다.
-            Express 프레임워크를 사용해 서버를 개발할 수 있습니다.
-          </Contents>
+          <Contents>리액트 내의 전역 상태관리가 가능합니다.</Contents>
         </PlaceWrapper>
         <PlaceWrapper>
           <Language>Node.js</Language>

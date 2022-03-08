@@ -15,7 +15,10 @@ const Experience = () => {
           <Period>2021.04.~2021.10</Period>
         </PlaceWrapper>
         <ContentWrapper>
-          <Content>메일, 전자결재시스템 등 교내 IT서비스 지원</Content>
+          <Content>
+            - 그룹웨어 기획 및 운영 (전자결재, 메일, 홈페이지)
+            <br />- IT서비스 관리 및 안내
+          </Content>
         </ContentWrapper>
       </BigWrapper>
       <BigWrapper>
@@ -25,7 +28,11 @@ const Experience = () => {
           <Period>2020.09.~2020.12</Period>
         </PlaceWrapper>
         <ContentWrapper>
-          <Content>누수데이터분석</Content>
+          <Content>
+            - 스마트수도 검침 시스템으로부터 수집된 데이터와 공공데이터 및
+            민원데이터를 이용하여 데이터분석
+            <br />- 스마트 미터링 관제시스템을 구축
+          </Content>
         </ContentWrapper>
       </BigWrapper>
     </ExperienceWrapper>
