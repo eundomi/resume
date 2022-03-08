@@ -10,7 +10,7 @@ import President101Page from "./pages/President101Page";
 function App() {
   return (
     <>
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
