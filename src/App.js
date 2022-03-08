@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ResumePage from "./pages/ResumePage";
 import PortfolioPage from "./pages/PortfolioPage";
@@ -10,7 +10,7 @@ import President101Page from "./pages/President101Page";
 function App() {
   return (
     <>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -20,7 +20,7 @@ function App() {
           <Route element={<President101Page />} path="/president101" />
           <Route element={<PortfolioPage />} path="/portfolio" />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
