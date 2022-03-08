@@ -8,7 +8,10 @@ const BackHeader = () => {
 
   return (
     <HeaderWrapper>
-      <Back src="./images/arrow.png" onClick={() => navigate(-1)}></Back>
+      <Back
+        src={`${process.env.PUBLIC_URL}/images/arrow.png`}
+        onClick={() => navigate(-1)}
+      ></Back>
     </HeaderWrapper>
   );
 };

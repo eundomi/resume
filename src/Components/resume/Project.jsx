@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   return (
@@ -14,7 +15,9 @@ const Project = () => {
           </Name>
           <Role>2021.01~2021.02 (4주)</Role>
           <Button>GitHub</Button>
-          <Button>PPT</Button>
+          <Link to="/yorijori">
+            <Button>PPT</Button>
+          </Link>
         </PlaceWrapper>
         <ContentWrapper>
           <Title>Description</Title>
@@ -40,7 +43,9 @@ const Project = () => {
           <Name>President101</Name>
           <Role>2021.12~2021.12 (2주)</Role>
           <Button>GitHub</Button>
-          <Button>PPT</Button>
+          <Link to="/president101">
+            <Button>PPT</Button>
+          </Link>
         </PlaceWrapper>
         <ContentWrapper>
           <Title>Description</Title>
@@ -65,7 +70,9 @@ const Project = () => {
         <PlaceWrapper>
           <Name>콘돔자판기 최적입지 선정</Name>
           <Role>2020.08~2020.09 (2주)</Role>
-          <Button>PPT</Button>
+          <Link to="/location">
+            <Button>PPT</Button>
+          </Link>
         </PlaceWrapper>
         <ContentWrapper>
           <Title>Description</Title>

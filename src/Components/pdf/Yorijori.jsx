@@ -17,7 +17,7 @@ const Location = () => {
   return (
     <div onContextMenu={(e) => e.preventDefault()}>
       <Document
-        file="../pdf/yorijori.pdf"
+        file={`${process.env.PUBLIC_URL}/pdf/yorijori.pdf`}
         onLoadSuccess={onDocumentLoadSuccess}
       >
         {Array.from(new Array(numPages), (_, index) => (
